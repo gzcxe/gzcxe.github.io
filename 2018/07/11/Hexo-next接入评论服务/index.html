@@ -79,17 +79,23 @@
 
 
 
-<meta name="description" content="热爱编程的小小程序员">
+<meta name="description" content="添加阅读量展示：使用LeanCloudhexo-next 6.0 集成了 leancloud_visitors firestore busuanzi_count 三种统计插件，这里我们选择leanCloud在完成注册LeanCloud帐号并验证邮箱之后，登录我们的LeanCloud帐号，进行简单的配置之后拿到AppID以及AppKey这两个参数就可以可正常使用文章阅读量统计的功能了。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test_my_site">
-<meta property="og:url" content="http://yoursite.com/2018/07/10/test-my-site/index.html">
+<meta property="og:title" content="Hexo-next接入阅读次数和评论服务">
+<meta property="og:url" content="http://yoursite.com/2018/07/11/Hexo-next接入评论服务/index.html">
 <meta property="og:site_name" content="蔡晓儿的个人博客">
-<meta property="og:description" content="热爱编程的小小程序员">
+<meta property="og:description" content="添加阅读量展示：使用LeanCloudhexo-next 6.0 集成了 leancloud_visitors firestore busuanzi_count 三种统计插件，这里我们选择leanCloud在完成注册LeanCloud帐号并验证邮箱之后，登录我们的LeanCloud帐号，进行简单的配置之后拿到AppID以及AppKey这两个参数就可以可正常使用文章阅读量统计的功能了。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-10T06:45:35.138Z">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/b20a1329ly1frr2oo1huzj20fo0cg0t0.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/b20a1329ly1frr2pg4s8lj20lo0bkjsl.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/b20a1329ly1frr2pqyfxrj20vm0eiq4q.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/b20a1329ly1frr60cff95j20xr0ff0va.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/b20a1329ly1frrznwnpq5j20pq0ewq3a.jpg">
+<meta property="og:updated_time" content="2018-07-11T07:44:35.121Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test_my_site">
-<meta name="twitter:description" content="热爱编程的小小程序员">
+<meta name="twitter:title" content="Hexo-next接入阅读次数和评论服务">
+<meta name="twitter:description" content="添加阅读量展示：使用LeanCloudhexo-next 6.0 集成了 leancloud_visitors firestore busuanzi_count 三种统计插件，这里我们选择leanCloud在完成注册LeanCloud帐号并验证邮箱之后，登录我们的LeanCloud帐号，进行简单的配置之后拿到AppID以及AppKey这两个参数就可以可正常使用文章阅读量统计的功能了。">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/b20a1329ly1frr2oo1huzj20fo0cg0t0.jpg">
 
 
 
@@ -119,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/10/test-my-site/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/11/Hexo-next接入评论服务/"/>
 
 
 
 
 
-  <title>test_my_site | 蔡晓儿的个人博客</title>
+  <title>Hexo-next接入阅读次数和评论服务 | 蔡晓儿的个人博客</title>
   
 
 
@@ -252,7 +258,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/10/test-my-site/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/11/Hexo-next接入评论服务/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="蔡晓儿">
@@ -269,7 +275,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">test_my_site</h2>
+          <h2 class="post-title" itemprop="name headline">Hexo-next接入阅读次数和评论服务</h2>
         
 
         <div class="post-meta">
@@ -281,8 +287,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-10T14:45:35+08:00">
-                2018-07-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-11T12:52:38+08:00">
+                2018-07-11
               </time>
             
 
@@ -292,6 +298,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/博客搭建/" itemprop="url" rel="index">
+                    <span itemprop="name">博客搭建</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -300,8 +328,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/10/test-my-site/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/10/test-my-site/" itemprop="commentCount"></span>
+                <a href="/2018/07/11/Hexo-next接入评论服务/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/11/Hexo-next接入评论服务/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -309,7 +337,7 @@
 
           
           
-             <span id="/2018/07/10/test-my-site/" class="leancloud_visitors" data-flag-title="test_my_site">
+             <span id="/2018/07/11/Hexo-next接入评论服务/" class="leancloud_visitors" data-flag-title="Hexo-next接入阅读次数和评论服务">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -334,7 +362,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0
+                  826
                 </span>
               
 
@@ -359,7 +387,29 @@
       
 
       
-        
+        <h2 id="添加阅读量展示：使用LeanCloud"><a href="#添加阅读量展示：使用LeanCloud" class="headerlink" title="添加阅读量展示：使用LeanCloud"></a>添加阅读量展示：使用<a href="https://leancloud.cn/" target="_blank" rel="noopener">LeanCloud</a></h2><p>hexo-next 6.0 集成了 <strong>leancloud_visitors</strong> <strong>firestore</strong> <strong>busuanzi_count</strong> 三种统计插件，<br>这里我们选择leanCloud<br>在完成注册LeanCloud帐号并验证邮箱之后，登录我们的LeanCloud帐号，进行简单的配置之后拿到AppID以及AppKey这两个参数就可以可正常使用文章阅读量统计的功能了。<br><a id="more"></a></p>
+<h3 id="注册LeanCloud："><a href="#注册LeanCloud：" class="headerlink" title="注册LeanCloud："></a>注册LeanCloud：</h3><p>完成了注册和激活邮箱，接下来我们需要进入控制台创建一个应用</p>
+<h3 id="创建应用"><a href="#创建应用" class="headerlink" title="创建应用"></a>创建应用</h3><p><img src="https://ws1.sinaimg.cn/large/b20a1329ly1frr2oo1huzj20fo0cg0t0.jpg" alt="创建应用"><br>这里我已经创建过一个test应用（你可以随意起名），直接点进去</p>
+<h3 id="建立class"><a href="#建立class" class="headerlink" title="建立class:"></a>建立class:</h3><p>点击控制台的存储标签，我们需要一个名为Counter的class，注意这里不要自定class的名字，必须为Counter<br><img src="https://ws1.sinaimg.cn/large/b20a1329ly1frr2pg4s8lj20lo0bkjsl.jpg" alt=""></p>
+<h3 id="绑定AppID和AppKey"><a href="#绑定AppID和AppKey" class="headerlink" title="绑定AppID和AppKey:"></a>绑定AppID和AppKey:</h3><p>打开控制台的设置标签栏，应用Key查看我们的应用Key<br><img src="https://ws1.sinaimg.cn/large/b20a1329ly1frr2pqyfxrj20vm0eiq4q.jpg" alt=""><br>复制AppID以及AppKey并在NexT主题的_config.yml文件中我们相应的位置填入即可，正确配置之后文件内容像这个样子:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">leancloud_visitors:</span><br><span class="line">  enable: true</span><br><span class="line">  app_id: dxDMdMpg9PkOb6M9tTxy7CNS-gzGzoHsz</span><br><span class="line">  app_key: MExhCaDhpuIdy9kLiTVLFoz3</span><br></pre></td></tr></table></figure></p>
+<p>这个时候重新生成部署Hexo博客，应该就可以正常使用文章阅读量统计的功能了。需要特别说明的是：记录文章访问量的唯一标识符是文章的发布日期以及文章的标题，因此请确保这两个数值组合的唯一性，如果你更改了这两个数值，会造成文章阅读数值的清零重计。<br>最后，一定要在Leancloud -&gt; 设置 -&gt; 安全中心 -&gt; Web 安全域名 把你的域名加进去，防止你的LeanCloud应用被恶意利用。</p>
+<h2 id="添加评论展示：使用Valine"><a href="#添加评论展示：使用Valine" class="headerlink" title="添加评论展示：使用Valine"></a>添加评论展示：使用<a href="https://valine.js.org/quickstart/" target="_blank" rel="noopener">Valine</a></h2><p>Valine的简介是:</p>
+<blockquote>
+<p>一款快速、简洁且高效的无后端评论系统。</p>
+</blockquote>
+<p>你也可以使用</p>
+<ul>
+<li>多说</li>
+<li>畅言</li>
+<li>网易云跟帖</li>
+<li>来比力</li>
+<li>hypercomments</li>
+<li>Gitment</li>
+<li>disqus<br><strong>这里我简单总结一下上面这些第三方评论服务的优缺点：多说，网易云跟帖已经先后在2017年3月，7月停止服务。搜狐畅言需要备案，disqus被墙，gitment仅支持github用户。来比力是韩国的，国内有时会不稳定。hypercomments在官网体验时感觉不错，但是貌似收费，没仔细研究，也可能是我没发现免费入口。valine的界面和Next主题很搭，国内访问速度很快，唯一的缺点就是评论不能添加图片</strong><br><strong>valine 也是基于LeanCloud的免费云服务进行的开发。跟上面的添加阅读量统计很类似，如果你已经接入过LeanCloud的阅读量统计，那么接下来就很简单了</strong><br>让我们三步完成评论服务的接入：</li>
+</ul>
+<h3 id="创建Comment-Class："><a href="#创建Comment-Class：" class="headerlink" title="创建Comment Class："></a>创建Comment Class：</h3><p>让我们回到LeanCloud在我们刚才建的test应用中新建一个名叫 Comment 的Class，注意，这个Class也不要自定名称，只能使用Comment<br><img src="https://ws1.sinaimg.cn/large/b20a1329ly1frr60cff95j20xr0ff0va.jpg" alt=""><br>修改NexT主题的_config.yml文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">valine:</span><br><span class="line">  enable: true</span><br><span class="line">  appid:  dxDMdMpg9PkOb6M9tTxy7CNS-gzGzoHsz</span><br><span class="line">  appkey:  MExhCaDhpuIdy9kLiTVLFoz3</span><br><span class="line">  notify: false # 邮件通知</span><br><span class="line">  verify: false # Verification code</span><br><span class="line">  placeholder: just go go #输入框提示语</span><br><span class="line">  avatar: wavatar # 头像风格</span><br><span class="line">  guest_info: nick,mail # 昵称，邮箱</span><br><span class="line">  pageSize: 10 # 每页展示条数</span><br></pre></td></tr></table></figure></p>
+<h3 id="接入Valine评论完成"><a href="#接入Valine评论完成" class="headerlink" title="接入Valine评论完成"></a>接入Valine评论完成</h3><p>效果如下：<br><img src="https://ws1.sinaimg.cn/large/b20a1329ly1frrznwnpq5j20pq0ewq3a.jpg" alt=""><br>果还有什么不懂的，可以去看看<a href="https://valine.js.org/quickstart/" target="_blank" rel="noopener">Valine官方文档</a></p>
+
       
     </div>
     
@@ -383,8 +433,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/10/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/07/10/Hexo-设置阅读全文/" rel="next" title="Hexo-设置阅读全文">
+                <i class="fa fa-chevron-left"></i> Hexo-设置阅读全文
               </a>
             
           </div>
@@ -393,8 +443,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/10/GitHub-Hexo-搭建个人网站/" rel="prev" title="GitHub+Hexo 搭建个人网站">
-                GitHub+Hexo 搭建个人网站 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/07/12/JS思维导图/" rel="prev" title="JS思维导图">
+                JS思维导图 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -450,8 +500,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -470,7 +529,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -481,7 +540,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -523,6 +582,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#添加阅读量展示：使用LeanCloud"><span class="nav-number">1.</span> <span class="nav-text">添加阅读量展示：使用LeanCloud</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注册LeanCloud："><span class="nav-number">1.1.</span> <span class="nav-text">注册LeanCloud：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建应用"><span class="nav-number">1.2.</span> <span class="nav-text">创建应用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#建立class"><span class="nav-number">1.3.</span> <span class="nav-text">建立class:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#绑定AppID和AppKey"><span class="nav-number">1.4.</span> <span class="nav-text">绑定AppID和AppKey:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加评论展示：使用Valine"><span class="nav-number">2.</span> <span class="nav-text">添加评论展示：使用Valine</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建Comment-Class："><span class="nav-number">2.1.</span> <span class="nav-text">创建Comment Class：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#接入Valine评论完成"><span class="nav-number">2.2.</span> <span class="nav-text">接入Valine评论完成</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -550,7 +625,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">3.9k</span>
+    <span title="Site words total count">4.8k</span>
   
 </div>
 
