@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蔡晓儿 · 售前技术支持</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --ink-soft: #3d3d5c;
+    --ink-muted: #7a7a9a;
+    --accent: #c0392b;
+    --accent-light: #f5e6e4;
+    --accent-mid: #e8a09a;
+    --gold: #b8860b;
+    --gold-light: #fdf4e3;
+    --bg: #faf9f7;
+    --surface: #ffffff;
+    --border: #e8e6e0;
+    --border-light: #f0ede8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  /* Top banner stripe */
+  .banner {
+    background: var(--ink);
+    height: 4px;
+    width: 100%;
+  }
+
+  .page-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px 60px;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 40px;
+    align-items: end;
+    padding: 48px 0 36px;
+    border-bottom: 1.5px solid var(--ink);
+  }
+
+  .header-left h1 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--ink);
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+
+  .header-left h1 span {
+    color: var(--accent);
+  }
+
+  .tagline {
+    font-size: 13px;
+    color: var(--ink-muted);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    font-weight: 300;
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+  }
+
+  .contact-item {
+    font-size: 13px;
+    color: var(--ink-soft);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .contact-item .dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .header-right {
+    text-align: right;
+    padding-bottom: 2px;
+  }
+
+  .stat-block {
+    margin-bottom: 16px;
+  }
+
+  .stat-number {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 11px;
+    color: var(--ink-muted);
+    letter-spacing: 0.15em;
+    margin-top: 2px;
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 6px;
+    margin-top: 12px;
+  }
+
+  .chip {
+    background: var(--ink);
+    color: #fff;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 2px;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── SECTION ── */
+  .section {
+    margin-top: 40px;
+  }
+
+  .section-title {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.35em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ── SUMMARY ── */
+  .summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .summary-card {
+    background: var(--surface);
+    padding: 20px 22px;
+  }
+
+  .summary-card h3 {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color: var(--ink-muted);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  .summary-card p {
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+
+  /* ── EXPERIENCE ── */
+  .exp-item {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 0 32px;
+    margin-bottom: 32px;
+  }
+
+  .exp-meta {
+    padding-top: 2px;
+  }
+
+  .exp-period {
+    font-size: 11px;
+    color: var(--ink-muted);
+    letter-spacing: 0.08em;
+    margin-bottom: 4px;
+  }
+
+  .exp-company {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 3px;
+  }
+
+  .exp-role {
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 400;
+  }
+
+  .exp-content {}
+
+  .exp-content h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+
+  .duties {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .duties li {
+    font-size: 13px;
+    color: var(--ink-soft);
+    padding-left: 14px;
+    position: relative;
+    line-height: 1.6;
+  }
+
+  .duties li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent-mid);
+    font-size: 11px;
+  }
+
+  /* ── PROJECTS ── */
+  .project-card {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: var(--ink);
+    padding: 14px 22px;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .project-name {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.05em;
+  }
+
+  .project-meta {
+    font-size: 11px;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.1em;
+  }
+
+  .project-body {
+    padding: 20px 22px;
+    background: var(--surface);
+  }
+
+  .star-row {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 8px 16px;
+    margin-bottom: 8px;
+    align-items: start;
+  }
+
+  .star-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 2px;
+    text-align: center;
+    margin-top: 1px;
+  }
+
+  .star-s { background: var(--gold-light); color: var(--gold); }
+  .star-t { background: #e8f4fd; color: #1a6fa8; }
+  .star-a { background: #edf7ed; color: #2d7a2d; }
+  .star-r { background: var(--accent-light); color: var(--accent); }
+
+  .star-text {
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+
+  .result-highlight {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border);
+  }
+
+  .result-pill {
+    background: var(--accent-light);
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 2px;
+    letter-spacing: 0.03em;
+  }
+
+  /* ── CERTS ── */
+  .certs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .cert-tag {
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 8px 16px;
+    font-size: 13px;
+    color: var(--ink-soft);
+    background: var(--surface);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .cert-tag::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+
+  /* ── EDU ── */
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .edu-row:last-child { border-bottom: none; }
+
+  .edu-left {}
+  .edu-school { font-size: 14px; font-weight: 500; color: var(--ink); }
+  .edu-major { font-size: 13px; color: var(--ink-muted); margin-top: 2px; }
+  .edu-right { font-size: 12px; color: var(--ink-muted); text-align: right; }
+
+  /* ── FOOTER ── */
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer p {
+    font-size: 11px;
+    color: var(--ink-muted);
+    letter-spacing: 0.1em;
+  }
+
+  footer a {
+    font-size: 11px;
+    color: var(--accent);
+    text-decoration: none;
+    letter-spacing: 0.08em;
+  }
+
+  @media (max-width: 640px) {
+    .header { grid-template-columns: 1fr; }
+    .header-right { text-align: left; }
+    .chips { justify-content: flex-start; }
+    .header-left h1 { font-size: 38px; }
+    .summary-grid { grid-template-columns: 1fr; }
+    .exp-item { grid-template-columns: 1fr; }
+    .exp-meta { margin-bottom: 8px; }
+    .star-row { grid-template-columns: 70px 1fr; }
+  }
+
+  @media print {
+    body { background: white; font-size: 12px; }
+    .page-wrapper { padding: 20px; }
+    .header { padding: 24px 0 20px; }
+    .section { margin-top: 24px; }
+    .project-card { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="banner"></div>
+
+<div class="page-wrapper">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-left">
+      <p class="tagline">Cloud Pre-Sales Technical Support · 售前技术支持</p>
+      <h1>蔡<span>晓</span>儿</h1>
+      <div class="contact-row">
+        <span class="contact-item"><span class="dot"></span>女 · 29岁</span>
+        <span class="contact-item"><span class="dot"></span>13247597486</span>
+        <span class="contact-item"><span class="dot"></span>1182569229@qq.com</span>
+        <span class="contact-item"><span class="dot"></span>期望城市：广州</span>
+        <span class="contact-item"><span class="dot"></span>期望薪资：20–40K</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="stat-block">
+        <div class="stat-number">8<span style="font-size:16px;font-weight:400;color:var(--ink-muted)"> 年</span></div>
+        <div class="stat-label">公有云售前经验</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-number">100<span style="font-size:16px;font-weight:400;color:var(--ink-muted)">+</span></div>
+        <div class="stat-label">生产系统迁移上云</div>
+      </div>
+      <div class="chips">
+        <span class="chip">阿里云</span>
+        <span class="chip">华为云</span>
+        <span class="chip">腾讯云</span>
+        <span class="chip">天翼云</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUMMARY -->
+  <section class="section">
+    <h2 class="section-title">核心优势</h2>
+    <div class="summary-grid">
+      <div class="summary-card">
+        <h3>技术广度</h3>
+        <p>跨阿里云、华为云、腾讯云、天翼云全平台售前经验，覆盖云迁移、等保合规、AI大模型等复杂场景</p>
+      </div>
+      <div class="summary-card">
+        <h3>行业深度</h3>
+        <p>深度服务游戏、金融、电商、服饰、物流等多行业头部客户，具备差异化的行业解决方案设计能力</p>
+      </div>
+      <div class="summary-card">
+        <h3>交付能力</h3>
+        <p>主导百套生产系统零事故交付，具备项目管理、技术方案撰写、客户演讲与团队培训全链路能力</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section">
+    <h2 class="section-title">工作经历</h2>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <div class="exp-period">2019.12 — 至今</div>
+        <div class="exp-company">广州仟聚信息<br>科技有限公司</div>
+        <div class="exp-role">云计算售前工程师</div>
+      </div>
+      <div class="exp-content">
+        <ul class="duties">
+          <li>主导华为云、腾讯云售前全链路工作，深度挖掘游戏、金融、电商等多行业客户需求，推动大型合同落地</li>
+          <li>独立完成复杂架构技术方案编写与客户演讲，覆盖云迁移、安全合规（等保2.0）、AI大模型等高价值场景</li>
+          <li>主导9377、广汽丰田、广州产权交易所等标杆项目，累计迁移100+套生产系统，零事故交付</li>
+          <li>负责公司AI聚合平台（大模型中转站）的运营、售前及技术支持</li>
+          <li>负责销售团队及渠道伙伴的云产品技术培训，推动技术新人能力成长</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <div class="exp-period">2018.07 — 2019.11</div>
+        <div class="exp-company">广州青莲网络<br>科技有限公司</div>
+        <div class="exp-role">上云架构师</div>
+      </div>
+      <div class="exp-content">
+        <ul class="duties">
+          <li>负责公有云计算服务及软件系统解决方案编写，协助推广云计算产品与方案，完善技术文档体系</li>
+          <li>支持销售团队参与客户技术交流，涵盖方案撰写、演示与咨询响应</li>
+          <li>提供代运维服务支持，承担服务器环境搭建、架构优化与阿里云产品疑难排查</li>
+          <li>负责公司云服务器资源管理、上线部署、监控与故障排查</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section">
+    <h2 class="section-title">项目经历（STAR 法则）</h2>
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-name">粤财金融客户开放平台 · 云上等保项目</span>
+        <span class="project-meta">项目经理 · 2025.10 — 2025.12</span>
+      </div>
+      <div class="project-body">
+        <div class="star-row">
+          <span class="star-label star-s">S · 背景</span>
+          <p class="star-text">粤财金融客户开放平台承载大量核心对外业务与敏感数据交互，需按等保2.0标准完成云上合规建设，面临<strong style="color:var(--ink)">整改周期压缩、技术要求高、须协调多方单位</strong>三重挑战。</p>
+        </div>
+        <div class="star-row">
+          <span class="star-label star-t">T · 目标</span>
+          <p class="star-text">在规定周期内完成华为云等保测评，实现业务合规上云，同时输出可复用的安全合规建设方案。</p>
+        </div>
+        <div class="star-row">
+          <span class="star-label star-a">A · 行动</span>
+          <p class="star-text">主导全程安全产品选型、开通及配置；梳理业务架构与等保合规差距，输出完整华为云等保方案；指导客户建立安全管理制度体系；协同等保测评机构、客户IT及云厂商三方，制定并压缩整改节点计划。</p>
+        </div>
+        <div class="star-row">
+          <span class="star-label star-r">R · 结果</span>
+          <p class="star-text">项目<strong style="color:var(--ink)">一次性顺利通过等保测评备案</strong>，实现业务合规上云，形成金融行业等保合规标准化交付模板。</p>
+        </div>
+        <div class="result-highlight">
+          <span class="result-pill">一次性通过测评</span>
+          <span class="result-pill">华为云等保合规</span>
+          <span class="result-pill">金融行业标杆</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-name">广汽丰田 GTMC / DMS 周边系统复刻上云</span>
+        <span class="project-meta">项目经理 · 2022.10 — 2022.11</span>
+      </div>
+      <div class="project-body">
+        <div class="star-row">
+          <span class="star-label star-s">S · 背景</span>
+          <p class="star-text">广汽丰田机房承载 <strong style="color:var(--ink)">14个核心生产系统共144台主机</strong>，业务连续性要求极高，需在保障不中断的前提下，将全部系统整体复刻迁移至天翼云，迁移周期仅2个月。</p>
+        </div>
+        <div class="star-row">
+          <span class="star-label star-t">T · 目标</span>
+          <p class="star-text">作为项目经理，负责端到端交付：完成全部14套系统的无中断迁移，确保验收通过率100%，在项目时限内零事故完成。</p>
+        </div>
+        <div class="star-row">
+          <span class="star-label star-a">A · 行动</span>
+          <p class="star-text">制定分批迁移策略，优先迁移低风险系统进行方案可行性验证；建立<strong style="color:var(--ink)">每日进度同步机制</strong>，协调客户IT、供应商与天翼云三方资源；针对核心系统制定<strong style="color:var(--ink)">双轨并行+切换演练</strong>方案，确保业务切换窗口可控；全程把控系统调研、迁移方案设计、实施与验收。</p>
+        </div>
+        <div class="star-row">
+          <span class="star-label star-r">R · 结果</span>
+          <p class="star-text"><strong style="color:var(--ink)">2个月内完成全部14套系统迁移，零业务中断，验收通过率100%</strong>，客户评价"超出预期"，形成汽车制造业云迁移可复用交付方案。</p>
+        </div>
+        <div class="result-highlight">
+          <span class="result-pill">零业务中断</span>
+          <span class="result-pill">验收通过率 100%</span>
+          <span class="result-pill">客户评价超出预期</span>
+          <span class="result-pill">2个月完成</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-name">9377《龙皇传说》跨云迁移</span>
+        <span class="project-meta">售前工程师 · 2022.02</span>
+      </div>
+      <div class="project-body">
+        <div class="star-row">
+          <span class="star-label star-s">S · 背景</span>
+          <p class="star-text">9377旗下MMO手游《龙皇传说》运营期间需从腾讯云、京东云整体迁移至华为云，涉及 <strong style="color:var(--ink)">20+渠道商</strong>，游戏PVP/PVE特性对网络延迟要求极高，可接受停机窗口极短，迁移风险高。</p>
+        </div>
+        <div class="star-row">
+          <span class="star-label star-t">T · 目标</span>
+          <p class="star-text">作为售前工程师主导方案设计，实现数据库零丢失、业务微中断迁移，并满足高并发低延迟的游戏业务要求。</p>
+        </div>
+        <div class="star-row">
+          <span class="star-label star-a">A · 行动</span>
+          <p class="star-text">采用华为云DRS进行数据库迁移，保障数据零丢失；设计并主导<strong style="color:var(--ink)">迁移POC测试</strong>验证方案可行性；选型C6S高性能实例+BGP网络满足高并发低延迟需求；协调多渠道商停机窗口，联动华为云数据库、网络、计算团队建立<strong style="color:var(--ink)">联合保障机制</strong>。</p>
+        </div>
+        <div class="star-row">
+          <span class="star-label star-r">R · 结果</span>
+          <p class="star-text"><strong style="color:var(--ink)">迁移全程业务零影响，数据零丢失，玩家无感知</strong>，迁移后成功完成新服上线，网络体验显著提升，形成游戏行业跨云迁移标准方案，可复用于同类项目。</p>
+        </div>
+        <div class="result-highlight">
+          <span class="result-pill">数据零丢失</span>
+          <span class="result-pill">玩家无感知</span>
+          <span class="result-pill">游戏行业标准方案</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CERTS -->
+  <section class="section">
+    <h2 class="section-title">资格证书</h2>
+    <div class="certs-grid">
+      <span class="cert-tag">HCIE · 华为认证ICT专家</span>
+      <span class="cert-tag">ACP · 阿里云专业工程师</span>
+      <span class="cert-tag">PMP · 项目管理认证</span>
+      <span class="cert-tag">CISP · 信息安全专业人员</span>
+      <span class="cert-tag">CKA · Kubernetes管理员</span>
+      <span class="cert-tag">火山大模型 VCA</span>
+    </div>
+  </section>
+
+  <!-- EDU -->
+  <section class="section">
+    <h2 class="section-title">教育经历</h2>
+    <div class="edu-row">
+      <div class="edu-left">
+        <div class="edu-school">广州商学院</div>
+        <div class="edu-major">计算机科学与技术 · 本科</div>
+      </div>
+      <div class="edu-right">
+        2015 — 2019<br>
+        <span style="font-size:11px;color:var(--ink-muted)">GPA 3.37 · 班级学习委员</span>
+      </div>
+    </div>
+    <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
+      <span style="font-size:12px;color:var(--ink-muted);background:var(--border-light);padding:4px 12px;border-radius:2px;">优秀共青团团员</span>
+      <span style="font-size:12px;color:var(--ink-muted);background:var(--border-light);padding:4px 12px;border-radius:2px;">2017年服务外包创新创业大赛二等奖</span>
+      <span style="font-size:12px;color:var(--ink-muted);background:var(--border-light);padding:4px 12px;border-radius:2px;">2019年校优秀实习生</span>
+    </div>
+  </section>
+
+  <footer>
+    <p>CAIXIAOER · RESUME · 2025</p>
+    <a href="https://gzcxe.github.io/resume.html" target="_blank">gzcxe.github.io/resume.html ↗</a>
+  </footer>
+
+</div>
+</body>
+</html>
